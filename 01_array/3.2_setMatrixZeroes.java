@@ -1,4 +1,4 @@
-
+// https://leetcode.com/problems/set-matrix-zeroes
 
 
 // brootforce solution
@@ -77,7 +77,6 @@ class Solution {
 
 
 // optimal solution 
-
 class Solution {
     public void setZeroes(int[][] matrix) {
         
