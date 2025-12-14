@@ -1,8 +1,4 @@
-package recursion;
-
-// fibonacci series
-
-public class Fibo {
+class fibo{
     public static void main(String[] args){
         System.out.println(fiboNumber(6));
     }
