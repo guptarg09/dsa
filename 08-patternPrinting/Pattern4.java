@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Pattern2 {
+public class Pattern1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter a number");
@@ -8,8 +8,8 @@ public class Pattern2 {
     }
     public static void pattern(int n) {
         for(int row = 1; row <= n; row++) {
-            for(int col = n; col >= row; col--) { // you can also use it: for(int col = 1; col <= n-row+1; col++)
-                System.out.print("* ");
+            for(int col = 1; col <= row; col++) {
+                System.out.print(col );
             }
             System.out.println();
         }
