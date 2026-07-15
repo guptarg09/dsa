@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Pattern7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a number");
+        int n = sc.nextInt();
+        pattern(n);
+    }
+    public static void pattern(int n) {
+        for(int row = 1; row < 2*n; row++) {
+            int totalColsInRow = row > n ? 2 * n - row : row;
+            
+            int noOfSpaces = n - totalColsInRow;
+            for(int s = 0; s < noOfSpaces; s++){
+                System.out.print(" ");
+            }
+            for(int col = 0; col < totalColsInRow; col++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
